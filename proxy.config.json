@@ -1,0 +1,14 @@
+{
+  "/apps/ng-c8y/**": {
+    "target": "http://localhost:4200/",
+    "pathRewrite": {
+      "^/apps/ng-c8y": ""
+    }
+  },
+  "/**!(apps)/**/*": {
+    "target": "http://demos.cumulocity.com",
+    "changeOrigin": true,
+    "secure": false,
+    "ws": true
+  }
+}
